@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+}
+body{
+  overflow: hidden;
+}
+.appContainer{
+  width: 100vw;
+  height:100vh;
+  /* border-radius: 20%; */
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.app{
+  width:98%;
+  height:95%;
+  border: 1px solid black;
+}
+.main{
+  width: 100%;
+  height:93%;
+  background-color: aqua
+}
+.header{
+  width:100%;
+  height: 7%;
+  background-color:#7295AB;
+}
+.headerWrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid yellow; */
+}
+.headerLogo{  
+  /* border: 1px solid blue; */
+  height: 80%;
+  margin-left: 0.5%;
+}
+.accountContainer{
+  height:100%;
+  width: 12%;
+}
+.account{
+  width: 100%;
+  height: 100%
+}
+.accountWrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+.accountPicture{
+  width:35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.accountInfo{
+  width: 40%;
+  height:10%;
+  margin-left: 13%;
+  background-color: yellow;
+}
+.menu{
+  width:15%;
+  height:100%;
+  background-color: red;
+  /* transform: translateY(300px) */
+}
+.selectBoxHeader{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
+.selectBoxTitle{
+  margin-left: 10px;
+}
+.selectBoxArrow{
+  width:30px;
+  height: 30px;
+  margin:0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+}
+.selectBoxArrowDown{
+  width:0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #fff;
+}
+.selectBoxArrowUp{
+
+  width:0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #fff;
+}
