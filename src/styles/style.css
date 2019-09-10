@@ -5,6 +5,9 @@
 body{
   overflow: hidden;
 }
+
+/* App */
+
 .appContainer{
   width: 100vw;
   height:100vh;
@@ -19,10 +22,15 @@ body{
   border: 1px solid black;
 }
 .main{
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height:93%;
-  background-color: aqua
+  background-color: #fff;
 }
+
+/* Header Component */
+
 .header{
   width:100%;
   height: 7%;
@@ -41,6 +49,9 @@ body{
   height: 80%;
   margin-left: 0.5%;
 }
+
+/* Account Component */
+
 .accountContainer{
   height:100%;
   width: 12%;
@@ -60,18 +71,21 @@ body{
   width:35px;
   height: 35px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: white;
 }
 .accountInfo{
   width: 40%;
   height:10%;
   margin-left: 13%;
-  background-color: yellow;
+  background-color: white;
 }
+
+/* Menu Component */
+
 .menu{
-  width:15%;
+  width:18%;
   height:100%;
-  background-color: red;
+  background-color: #fff;
   /* transform: translateY(300px) */
 }
 .selectBoxHeader{
@@ -100,10 +114,143 @@ body{
   border-top: 10px solid #fff;
 }
 .selectBoxArrowUp{
-
   width:0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 10px solid #fff;
+}
+
+/* Model Component */
+
+.models{
+  width:25%;
+  height:100%;
+  background: #fff;
+}
+.modelItems{
+  width:100%;
+  height:80%;
+}
+.modelItem{
+  width:100%;
+  height:8%;
+  margin-top:2px;
+  background: lightblue;
+}
+.modelItemWrapper{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.modelSearchBar{
+  width:90%;
+  align-self: center;
+  margin-top: 10px;
+}
+.modelPicture{
+  width:2vw;
+  height:2vw;
+  border: 1px solid black;
+  border-radius: 10000%;
+  margin: auto 0;
+  margin-left: 3%;
+}
+.modelInfos{
+  display: flex;
+  flex-direction: row;
+}
+.modelInfos > * {
+  margin-left: 7%;
+}
+.modelInfosText > * {
+  margin-left: 10%;
+}
+.modelInfosText{
+  display: flex;
+  flex-direction: row;
+}
+.modelTitle{
+  font-size: 14px;
+}
+.modelLine{
+  width: 100%;
+  height:2px;
+  background: #aaa;
+}
+.searchBar{
+  width:100%;
+  height:25%;
+}
+.searchBarInput{
+  width: 100%;
+  height:100%;
+  border-radius: 9px;
+  background: #EAE9E9;
+  border: 2px solid #B8C6CF;
+}
+
+/* Edit Component */
+
+.edit{
+  width:28%;
+  height:100%;
+  border: 1px solid black;
+}
+.editWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+.editPictureProduct{
+  width:95%;
+  height:20%;
+  margin: 2%;
+  border-radius: 10px;
+  background: #EAE9E9
+}
+.editBasicProduct{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.editProductInput{
+  width: 90%;
+  height:100%;
+  border-radius: 9px;
+  background: #EAE9E9;
+  border: 2px solid #B8C6CF;
+  margin-bottom: 3%;
+  padding-left: 3%;
+}
+.editQuantity{
+  width:90%; 
+  margin-bottom: 2%;
+}
+.checkboxS{
+  display: flex;
+  width:90%;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-left:3%;
+  margin-right:3%; */
+}
+.checkboxS > div  {
+  display: flex;
+  align-items: center;
+}
+.checkboxLabel{
+  width:max-content;
+  margin-left: 5px;
+}
+.editInformationsProduct{
+  width:90%;
+  height:15%;
+  border: 2px solid #B8C6CF;
+  border-radius: 9px;
 }

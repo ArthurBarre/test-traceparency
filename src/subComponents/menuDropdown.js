@@ -15,7 +15,7 @@ class SelectBox extends Component {
   render() {
     return (
       <div>
-        <div class="selectBoxHeader">
+        <div className="selectBoxHeader">
           <div className="selectBoxArrow" onClick={this.dropDown}>
             <span className={`${this.state.showItems ? 'selectBoxArrowUp' : 'selectBoxArrowDown'}`} />
           </div>
