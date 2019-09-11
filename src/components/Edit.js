@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CheckBox from '../subComponents/Quantity'
+import EditDocProduct from '../subComponents/EditDocProduct'
 
 class Edit extends Component {
   render() {
@@ -16,6 +17,7 @@ class Edit extends Component {
             <CheckBox />
           </div>
           <input className="editInformationsProduct" placeholder="big text"></input>
+          <EditDocProduct />
         </div>
       </div>
     )

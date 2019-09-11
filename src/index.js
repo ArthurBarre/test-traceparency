@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './styles/style.css'
 import Header from "./components/Header"
 import Menu from './components/Menu';
-import Edit from "./components/Edit"
-import Models from './components/Models'
+import Edit from "./components/Edit";
+import Models from './components/Models';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <div className="appContainer">

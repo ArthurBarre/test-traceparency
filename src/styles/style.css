@@ -83,7 +83,7 @@ body{
 /* Menu Component */
 
 .menu{
-  width:18%;
+  width:20%;
   height:100%;
   background-color: #fff;
   /* transform: translateY(300px) */
@@ -92,9 +92,12 @@ body{
   width:100%;
   display: flex;
   flex-direction: row;
+  align-items: center
 }
 .selectBoxTitle{
   margin-left: 10px;
+  font-size:16px;
+  font-weight: normal;
 }
 .selectBoxArrow{
   width:30px;
@@ -253,4 +256,49 @@ body{
   height:15%;
   border: 2px solid #B8C6CF;
   border-radius: 9px;
+}
+.editDocContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.newDoc{
+  width: 95%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.newDocInput{
+  width:80%;
+  height:45%;
+  margin-left: 5%;
+  border-radius: 9px;
+  background: #EAE9E9;
+  border: 2px solid #B8C6CF;
+}
+.deleteDoc{
+  width: 80%;
+  margin-left: 6%;
+  /* border: 1px solid black; */
+}
+.deleteDoc{
+  width: 7%;
+  height: 100%;
+  background-color: #7295AB;
+  border-radius: 5px;
+}
+.deleteDocImg{
+  width:20px;
+  height:100%;
+  margin-top:2px;
+  margin-left: 2px;
+  transform:scale(0.7)
+}
+.addDoc{
+  width: 80%;
+}
+.addDocText{
+  font-size:15px;
 }
