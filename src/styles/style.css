@@ -2,6 +2,7 @@
   margin: 0;
   font-family: sans-serif;
 }
+
 body{
   overflow: hidden;
 }
@@ -139,7 +140,7 @@ body{
   width:100%;
   height:8%;
   margin-top:2px;
-  background: lightblue;
+  background: rgba(184, 198, 207, 0.336);
 }
 .modelItemWrapper{
   width:100%;
@@ -211,7 +212,7 @@ body{
 }
 .editPictureProduct{
   width:95%;
-  height:20%;
+  height:15%;
   margin: 2%;
   border-radius: 10px;
   background: #EAE9E9
@@ -233,7 +234,9 @@ body{
 }
 .editQuantity{
   width:90%; 
-  margin-bottom: 2%;
+}
+.editQuantityTitle{
+  margin-bottom:0px;
 }
 .checkboxS{
   display: flex;
@@ -260,45 +263,96 @@ body{
 .editDocContainer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 90%;
+  height:30%;
+  margin-top:2%;
+  /* border:1px solid black; */
 }
 .newDoc{
-  width: 95%;
-  margin-top: 10%;
+  width:100%;
+  height:14%;
   display: flex;
+  margin-top: 3%;
   flex-direction: row;
-  align-items: center
 }
-.newDocInput{
+.editInput{
+  width:90%;
+  height:100%;  
+  background: #EAE9E9;
+  padding-left:3%;
+  margin-right:3%;
+  border: 2px solid #B8C6CF;
+  border-radius: 10px;
+}
+.deleteDoc{
+  width:10%;
+  height: 100%;
+  background: #7295AB;
+  margin-left: 2%;
+  border-radius: 8px;
+}
+.editDoc{
+  width:10%;
+  height: 100%;
+  background: #7295AB;
+  margin-left: 2%;
+  border-radius: 8px;
+}
+.addDockBtnContainer{
   width:80%;
-  height:45%;
-  margin-left: 5%;
-  border-radius: 9px;
+  height:14%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3%;
+  background: #7295AB;
+  border-radius: 10px;
+}
+.addDockBtnText{
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  margin: auto;
+}
+.editLinkContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height:5%;
+  border: 2px solid red;
+}
+.editLink{
+  width:95%;
+  height:15%;  
   background: #EAE9E9;
   border: 2px solid #B8C6CF;
+  margin-right:3%;
+  margin-top:3%; 
+  padding-left: 3%;
+  border-radius: 10px;
 }
-.deleteDoc{
-  width: 80%;
-  margin-left: 6%;
-  /* border: 1px solid black; */
+.warningEdit{
+  text-align: center;
+  font-size: 13px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.deleteDoc{
-  width: 7%;
-  height: 100%;
-  background-color: #7295AB;
-  border-radius: 5px;
+.saveModelBtnContainer{
+  width:80%;
+  height:4%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3%;
+  background: #7295AB;
+  border-radius: 10px;
 }
-.deleteDocImg{
-  width:20px;
-  height:100%;
-  margin-top:2px;
-  margin-left: 2px;
-  transform:scale(0.7)
-}
-.addDoc{
-  width: 80%;
-}
-.addDocText{
-  font-size:15px;
+.saveModelBtnText{
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  margin: auto;
 }

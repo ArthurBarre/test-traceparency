@@ -10,6 +10,13 @@ class Models extends Component {
         </div>
         <div className="modelItems">
           <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122321" />
         </div>
       </div>
     )

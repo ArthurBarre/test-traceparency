@@ -1,5 +1,5 @@
 import React from 'react'
-import SelectBox from "../subComponents/MenuDropdown";
+import SelectBox from "../subComponents/SelectBox";
 import '../styles/style.css'
 const Menu = () => {
   return (
