@@ -12,6 +12,12 @@ class SelectBox extends Component {
       showItems: !prevState.showItems
     }))
   }
+  selectItem(item) {
+    if (item === 3) {
+      var itemSelected = 3;
+      return itemSelected;
+    }
+  }
   render() {
     return (
       <div>
@@ -23,7 +29,7 @@ class SelectBox extends Component {
         </div>
         <div style={{ display: this.state.showItems ? 'block' : 'none' }}>
           {
-            this.state.items.map(item => <div key={item.id}>
+            this.state.items.map(item => <div key={item.id} onClick={() => this.selectItem(item.id)}>
               {item.value}
             </div>
             )

@@ -6,21 +6,30 @@ import Menu from './components/Menu';
 import Edit from "./components/Edit";
 import Models from './components/Models';
 import 'bootstrap/dist/css/bootstrap.min.css';
-const App = () => {
+import Recap from './components/Recap';
+
+const Dashboard = () => {
   return (
-    <div className="appContainer">
-      <div className="app">
-        <Header />
-        <section className="main">
-          <Menu />
-          <Models />
-          <Edit />
-        </section>
-
-      </div>
+    <div className="app">
+      <Header />
+      <section className="main">
+        <Menu />
+        <Models />
+        <Edit />
+        <Recap />
+      </section>
     </div>
-
   )
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="appContainer">
+        <Dashboard />
+      </div>
+    )
+  }
 }
 export default App;
 

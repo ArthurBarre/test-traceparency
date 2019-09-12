@@ -26,15 +26,22 @@ body{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height:93%;
+  height:95%;
   background-color: #fff;
+}
+.otherMain{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:95%;
+  background-color: #000;
 }
 
 /* Header Component */
 
 .header{
   width:100%;
-  height: 7%;
+  height: 5%;
   background-color:#7295AB;
 }
 .headerWrapper{
@@ -69,8 +76,8 @@ body{
   align-items: center;
 }
 .accountPicture{
-  width:35px;
-  height: 35px;
+  width:25px;
+  height: 25px;
   border-radius: 50%;
   background-color: white;
 }
@@ -199,7 +206,7 @@ body{
 /* Edit Component */
 
 .edit{
-  width:28%;
+  width:30%;
   height:100%;
   border: 1px solid black;
 }
@@ -355,4 +362,12 @@ body{
   text-transform: uppercase;
   color:white;
   margin: auto;
+}
+
+/* Recap */
+
+.recap{
+  width:25%;
+  height:100%;
+  border: 1px solid red;
 }
