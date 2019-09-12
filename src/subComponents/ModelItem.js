@@ -10,7 +10,7 @@ class ModelItem extends Component {
             <h2 className="modelTitle">{this.props.title}</h2>
             <div className="modelInfosText">
               <p>{this.props.tag}</p>
-              <p>{this.props.number}</p>
+              <p>#{this.props.number}</p>
             </div>
           </div>
         </div>
