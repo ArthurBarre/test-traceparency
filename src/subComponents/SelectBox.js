@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import '../styles/style.css'
+import App from "../index"
 class SelectBox extends Component {
+  constructor(props) {
+    super(props);
+    this.app = new App(this);
+  }
   state = {
     items: this.props.items || [],
     showItems: false,
-    selectedItems: this.props.items && this.props.items[0],
+    selectedItems: null
   }
 
   dropDown = () => {
@@ -13,10 +18,10 @@ class SelectBox extends Component {
     }))
   }
   selectItem(item) {
-    if (item === 3) {
-      var itemSelected = 3;
-      return itemSelected;
-    }
+    this.app.getValue(item)
+  }
+  componentDidMount(test) {
+    // this.app.getValue(test)
   }
   render() {
     return (

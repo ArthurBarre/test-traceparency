@@ -18,13 +18,13 @@ class Recap extends Component {
         </div>
         <div className="recapIdentity">
           <div className="recapId">
-            <h6 class="recapIdText">ID NUMBER 12231212</h6>
+            <h6 className="recapIdText">ID NUMBER 12231212</h6>
           </div>
           <div className="recapId">
-            <h6 class="recapIdText">ID CERTIFIED BY Arthur</h6>
+            <h6 className="recapIdText">ID CERTIFIED BY Arthur</h6>
           </div>
           <div className="recapId">
-            <h6 class="recapIdText">REGISTRATION DATE 12/12/2012</h6>
+            <h6 className="recapIdText">REGISTRATION DATE 12/12/2012</h6>
           </div>
         </div>
         <div className="recapStory">

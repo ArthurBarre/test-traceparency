@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import SearchBar from "../subComponents/SearchBar"
 import ModelItem from "../subComponents/ModelItem"
 class Models extends Component {
+  constructor(props) {
+    super(props);
+    console.log(props)
+  }
   render() {
     return (
       <div className="models">
@@ -14,7 +18,7 @@ class Models extends Component {
           <ModelItem title="titre" tag="tag" number="122321" />
           <ModelItem title="titre" tag="tag" number="122321" />
           <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122321" />
+          <ModelItem title="titre" tag="tag" number="122327" />
           <ModelItem title="titre" tag="tag" number="122321" />
           <ModelItem title="titre" tag="tag" number="122321" />
         </div>

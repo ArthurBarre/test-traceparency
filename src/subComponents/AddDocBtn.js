@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddDocBtn = () => {
   return (
-    <div class="addDockBtnContainer">
+    <div className="addDockBtnContainer">
       <h6 className="addDockBtnText ">ajouter un document</h6>
     </div>
   )

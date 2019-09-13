@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 //import "../styles/style"
 class ModelItem extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="modelItem">
@@ -14,7 +17,6 @@ class ModelItem extends Component {
             </div>
           </div>
         </div>
-        <div className="modelLine" />
       </div>
     )
   }

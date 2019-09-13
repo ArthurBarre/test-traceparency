@@ -15,7 +15,7 @@ class Edit extends Component {
             <input className="editProductInput" placeholder="Annee d'achat" />
           </div>
           <div className="editQuantity">
-            <p class="editQuantityTitle">Contenances possibles</p>
+            <p className="editQuantityTitle">Contenances possibles</p>
             <CheckBox />
           </div>
           <input className="editInformationsProduct" placeholder="big text"></input>
