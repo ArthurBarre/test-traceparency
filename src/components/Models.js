@@ -4,24 +4,35 @@ import ModelItem from "../subComponents/ModelItem"
 class Models extends Component {
   constructor(props) {
     super(props);
-    console.log(props)
+    this.state = {
+      count: 0,
+      datas: this.props.data,
+      modelId: 0
+    }
+  }
+  print() {
+    console.log(this.state.datas)
+  }
+  selectItem(id) {
+    this.props.itemSelected(id)
   }
   render() {
+    const datas = this.props.data
     return (
       <div className="models">
         <div className="modelSearchBar">
-          <SearchBar />
+          <SearchBar onSubmit={this.selectItem} />
         </div>
         <div className="modelItems">
-          <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122327" />
-          <ModelItem title="titre" tag="tag" number="122321" />
-          <ModelItem title="titre" tag="tag" number="122321" />
+          {
+            datas.map((data, index) => {
+              return (<ModelItem key={index}
+                onClick={() => this.selectItem(data.id)}
+                title={data.editNameProductInput} />)
+            })
+          }
         </div>
+        <button onClick={() => console.log(datas)}>console</button>
       </div>
     )
   }

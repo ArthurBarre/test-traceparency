@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 //import "../styles/style"
+
+
+
 class ModelItem extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="modelItem">
@@ -12,8 +12,11 @@ class ModelItem extends Component {
           <div className="modelInfos">
             <h2 className="modelTitle">{this.props.title}</h2>
             <div className="modelInfosText">
-              <p>{this.props.tag}</p>
-              <p>#{this.props.number}</p>
+              {/* <button onClick={() => console.log('datas: ', this.state.datas)}>
+                test
+              </button>  */}
+              {/* <p>{this.props.tag}</p>
+              <p>#{this.props.number}</p> */}
             </div>
           </div>
         </div>

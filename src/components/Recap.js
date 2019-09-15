@@ -1,12 +1,26 @@
 import React, { Component } from 'react'
 
 class Recap extends Component {
+  constructor(props) {
+    super(props);
+    console.log('------------------------------------');
+    console.log(props);
+    console.log('------------------------------------');
+    this.state = {
+      name: this.props.data.editNameProductInput,
+      year: this.props.data.editYearProductInput,
+      quantity: '3L',
+      infoProduct: this.props.data.editInformationsProduct,
+      editLink: this.props.data.editLink,
+
+    }
+  }
   render() {
     return (
       <div className="recap">
         <div className="recapMainPicture"></div>
         <div className="recapTitleContainer">
-          <p className="recapTitle">Nom Annee Quantite</p>
+          <p className="recapTitle">{this.state.name} {this.state.year} {this.state.quantity}</p>
         </div>
         <div className="recapIdCertified"></div>
         <div className="recapStatus">
@@ -29,6 +43,7 @@ class Recap extends Component {
         </div>
         <div className="recapStory">
           <h5 className="recapSubtitle">Product story</h5>
+          {this.state.infoProduct}
         </div>
         <div className="recapInfos">
           <h6 className="recapSubtitle">Notes about your product</h6>
@@ -38,6 +53,7 @@ class Recap extends Component {
         </div>
         <div className="recapDocs">
           <h6 className="recapSubtitle">Documents</h6>
+          {this.state.editLink}
         </div>
         <div className="recapMoreDocs">
           <h6 className="recapSubtitleDocs">MORE INFORMATIONS</h6>
